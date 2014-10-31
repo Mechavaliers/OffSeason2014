@@ -136,19 +136,25 @@ public class DriveBase extends Subsystem implements Loopable{
       return gyro.getRate();
   }
   
-  public double smartAngle(){
-      double angle = gyro.getAngle();
+  
+  public double nonContAngle(){
+     double angle = gyro.getAngle();
         if(gyro.getAngle() > 0){
           angle = gyro.getAngle()%360;
           return angle;
-        }else if(gyro.getAngle() < 0){
+       }else if(gyro.getAngle() < 0){
           angle = gyro.getAngle()%-360;
           return angle;
+       }
+     return angle;
+  }
+  
+  public double smartAngle(){
+      double degRot = 0;
+        if(3 <= nonContAngle() && nonContAngle() >= -3){
+           degRot = 0;
         }
-      if(3 <= angle || angle >= -3){
-          angle = 0;
-      }
-  return angle;
+      return degRot;
   }
   
   public void resetGyro(){

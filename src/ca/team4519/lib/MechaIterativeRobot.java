@@ -99,7 +99,7 @@ public class MechaIterativeRobot extends RobotBase implements Loopable {
    * exactly 1 time.
    */
   public void robotInit() {
-    System.out.println("MechaIterativeRobot IterativeRobot.robotInit() method... Overload me!");
+    System.out.println("MechaIterativeRobot ROBOTINITS DONE #SWOOOOOOGGGGGG");
   }
 
   /**
@@ -109,7 +109,7 @@ public class MechaIterativeRobot extends RobotBase implements Loopable {
    * called each time the robot enters disabled mode.
    */
   public void disabledInit() {
-    System.out.println("MechaIterativeRobot IterativeRobot.disabledInit() method... Overload me!");
+    System.out.println("MechaIterativeRobot DisabledInits  DONE #SWOOOOOOGGGGGG");
   }
 
   /**
@@ -119,7 +119,7 @@ public class MechaIterativeRobot extends RobotBase implements Loopable {
    * called each time the robot enters autonomous mode.
    */
   public void autonomousInit() {
-    System.out.println("MechaIterativeRobot IterativeRobot.autonomousInit() method... Overload me!");
+    System.out.println("MechaIterativeRobot AutonInit  DONE #SWOOOOOOGGGGGG");
   }
 
   /**
@@ -129,7 +129,7 @@ public class MechaIterativeRobot extends RobotBase implements Loopable {
    * called each time the robot enters teleop mode.
    */
   public void teleopInit() {
-    System.out.println("MechaIterativeRobot IterativeRobot.teleopInit() method... Overload me!");
+    System.out.println("MechaIterativeRobot TeleopInits  DONE #SWOOOOOOGGGGGG");
   }
 
   /**
@@ -139,7 +139,7 @@ public class MechaIterativeRobot extends RobotBase implements Loopable {
    * called each time the robot enters test mode.
    */
   public void testInit() {
-    System.out.println("MechaIterativeRobot IterativeRobot.testInit() method... Overload me!");
+    System.out.println("MechaIterativeRobot TestInits  DONE #SWOOOOOOGGGGGG");
   }
 
   /* ----------- Overridable periodic code -----------------*/
@@ -153,7 +153,7 @@ public class MechaIterativeRobot extends RobotBase implements Loopable {
    */
   public void disabledPeriodic() {
     if (dpFirstRun) {
-      System.out.println("MechaIterativeRobot IterativeRobot.disabledPeriodic() method... Overload me!");
+      System.out.println("MechaIterativeRobot DisabledInits  DONE #SWOOOOOOGGGGGG");
       dpFirstRun = false;
     }
     Timer.delay(0.001);
@@ -168,7 +168,7 @@ public class MechaIterativeRobot extends RobotBase implements Loopable {
    */
   public void autonomousPeriodic() {
     if (apFirstRun) {
-      System.out.println("MechaIterativeRobot IterativeRobot.autonomousPeriodic() method... Overload me!");
+      System.out.println("MechaIterativeRobot flasfkasgjj DONE #SWOOOOOOGGGGGG");
       apFirstRun = false;
     }
     Timer.delay(0.001);
@@ -183,7 +183,7 @@ public class MechaIterativeRobot extends RobotBase implements Loopable {
    */
   public void teleopPeriodic() {
     if (tpFirstRun) {
-      System.out.println("MechaIterativeRobot IterativeRobot.teleopPeriodic() method... Overload me!");
+      System.out.println("MechaIterativeRobot Teleops Period Has BEgusnbnn  DONE #SWOOOOOOGGGGGG");
       tpFirstRun = false;
     }
     Timer.delay(0.001);

@@ -153,8 +153,11 @@ public class DriveBase extends Subsystem implements Loopable{
       double degRot = 0;
         if(3 <= nonContAngle() && nonContAngle() >= -3){
            degRot = 0;
+           return degRot;
+        }else{
+            degRot = nonContAngle();
+            return degRot;
         }
-      return degRot;
   }
   
   public void resetGyro(){

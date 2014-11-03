@@ -33,6 +33,7 @@ public class MechavaliersCompetition extends MechaIterativeRobot {
     
  
  public void robotInit() {
+   Constants.readConstantsFromFile();
    MechaRobot.driveBase.resetGyro();
    MechaRobot.subsystemUpdater100Hz.start();
    
